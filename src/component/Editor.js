@@ -4,9 +4,9 @@ import axios from "axios";
 import "../styles/index.css";
 import { Link, useSearchParams } from "react-router-dom";
 
-const API_URL = process.env.API_URL || "http://localhost:5000";
-
 const Editor = () => {
+  const API_URL = process.env.API_URL || "http://localhost:5000";
+
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
   const [postId, setPostId] = useState("");

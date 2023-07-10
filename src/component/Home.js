@@ -3,9 +3,9 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "../styles/index.css";
 
-const API_URL = process.env.API_URL || "http://localhost:5000";
-
 const Home = () => {
+  const API_URL = process.env.API_URL || "http://localhost:5000";
+
   const [blogPosts, setBlogPosts] = useState([]);
 
   useEffect(() => {
