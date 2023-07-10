@@ -4,7 +4,8 @@ import { Link } from "react-router-dom";
 import "../styles/index.css";
 
 const Home = () => {
-  const API_URL = process.env.API_URL || "http://localhost:5000";
+  const API_URL =
+    process.env.API_URL || "https://autosave-backend.onrender.com";
 
   const [blogPosts, setBlogPosts] = useState([]);
 
